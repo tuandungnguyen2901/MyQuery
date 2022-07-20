@@ -1,0 +1,90 @@
+@import '@/styles/globalStyles.scss';
+
+.query-detail-page-question-card {
+  width: 100%;
+  background-color: $main-white-color;
+  padding: 20px 30px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 0.9px solid $gray-color-1;
+
+  .title {
+    font-size: 24px;
+
+    &:hover {
+      color: $main-orange-color;
+      cursor: pointer;
+    }
+  }
+
+  .question-card-tags {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .question-card-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .question-card-functions {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+
+    .vote-field {
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2px;
+
+      .vote-item {
+        &:hover {
+          color: $main-orange-color;
+        }
+      }
+
+      .vote-item-pressed {
+        color: $main-orange-color;
+      }
+    }
+
+    .function-buttons {
+      display: flex;
+      gap: 10px;
+      .btn {
+        height: 36px;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        gap: 8px;
+        font-weight: 400;
+        user-select: none;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 1px 3px 0 rgba(25, 25, 25, 0.2),
+            0 2px 10px 1px rgba(79, 79, 79, 0.19);
+        }
+      }
+
+      .edit-btn {
+        border: 1px solid $gray-color-1;
+        padding-right: 10px;
+      }
+
+      .save-btn {
+        border: 1px solid $gray-color-1;
+        // padding-right: 10px;
+      }
+    }
+  }
+}

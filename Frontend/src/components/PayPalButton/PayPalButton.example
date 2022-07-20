@@ -1,0 +1,3 @@
+
+
+<PayPal total={1000} tranSuccess={tranSuccess} />

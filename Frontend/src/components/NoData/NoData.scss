@@ -1,0 +1,8 @@
+@import '@/styles/globalStyles.scss';
+
+.no-data {
+  background-color: $main-white-color;
+  width: 100%;
+  padding: 80px 100px;
+  border-radius: 6px;
+}

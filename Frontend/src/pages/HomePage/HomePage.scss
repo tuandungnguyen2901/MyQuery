@@ -1,0 +1,172 @@
+@import '@/styles/globalStyles.scss';
+
+.home-page {
+  .first-section {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+
+    .first-section-content {
+      padding: 40px 60px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      background: rgba(0, 0, 0, 0.35);
+
+      h1 {
+        color: $main-white-color;
+        font-family: Inter;
+        font-size: 40px;
+        font-weight: 700;
+        font-family: $poppins-font;
+      }
+
+      h2 {
+        color: $main-white-color;
+        font-weight: 400;
+        text-align: center;
+        width: 90%;
+        max-width: 1100px;
+      }
+
+      .first-section-buttons {
+        display: flex;
+        gap: 56px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+
+        @include mobile {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .first-section-btn {
+          height: 56px;
+          width: 180px;
+          background-color: $secondary-orange-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 6px;
+          color: $main-black-color;
+          font-family: $poppins-font;
+          font-size: 24px;
+          font-weight: 700;
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+          transition: 0.3s ease-in-out;
+
+          &:hover {
+            cursor: pointer;
+            box-shadow: 0 3px 30px 0 rgba(25, 25, 25, 0.2),
+              0 3px 50px 2px rgba(79, 79, 79, 0.19);
+          }
+        }
+      }
+    }
+  }
+
+  .second-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: $main-white-color;
+    padding: 50px 60px;
+    text-align: center;
+
+    h1 {
+      font-family: $poppins-font;
+      font-weight: 700;
+      font-size: 40px;
+    }
+    .second-section-content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 60px;
+
+      .second-section-segment {
+        max-width: 250px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+
+        p {
+          text-align: center;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .third-section {
+    background: $gray-color-3;
+    text-align: center;
+    padding: 40px 60px;
+    position: relative;
+
+    h1 {
+      font-family: $poppins-font;
+      font-weight: 700;
+      font-size: 40px;
+    }
+
+    .third-section-content {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  }
+
+  .fourth-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: $main-white-color;
+    padding: 50px 60px;
+    text-align: center;
+    position: relative;
+    h1 {
+      font-family: $poppins-font;
+      font-weight: 700;
+      font-size: 40px;
+    }
+
+    .fourth-section-content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 27px;
+      max-width: 900px;
+
+      .fourth-section-segment {
+        max-width: 282px;
+        display: flex;
+      }
+    }
+  }
+
+  .my-more-icon {
+    color: $main-black-color;
+    transition: 0.12s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: $main-blue-color;
+    }
+  }
+}

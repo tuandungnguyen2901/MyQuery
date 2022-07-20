@@ -1,0 +1,246 @@
+@import '@/styles/globalStyles.scss';
+
+.sign-up-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $main-orange-color;
+  background: linear-gradient(
+    18deg,
+    rgba(235, 104, 0, 1) 0%,
+    rgba(237, 187, 88, 1) 34%,
+    rgba(218, 187, 111, 1) 54%,
+    rgba(254, 167, 76, 1) 76%,
+    rgba(255, 132, 35, 1) 89%,
+    rgba(255, 91, 0, 1) 100%
+  );
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  position: relative;
+
+  .sign-up-page-main {
+    overflow: hidden;
+    display: flex;
+    height: 600px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 12px;
+
+    .sign-up-navigation {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+
+      span {
+        &:nth-child(1) {
+          font-style: italic;
+        }
+      }
+
+      .sign-up-navigate {
+        margin-left: 10px;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .sign-up-page-sider {
+      width: 350px;
+      background-color: #ffffff89;
+      position: relative;
+      display: block;
+
+      .sider-illus {
+        width: 270px;
+        transform: translate(9%, 80%);
+      }
+
+      .dots-1 {
+        width: 200px;
+        transform: translate(-30%, 100%);
+        opacity: 80%;
+      }
+
+      .dots-2 {
+        width: 300px;
+        transform: translate(60%, -200%);
+        opacity: 100%;
+      }
+    }
+
+    .main-form {
+      background-color: white;
+      width: 450px;
+      padding: 20px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+
+      b {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      .ant-input {
+        border-radius: 4px;
+      }
+
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: $main-orange-color;
+        border-color: $main-orange-color;
+      }
+
+      .sign-up-btn {
+        background-color: $main-orange-color;
+        height: 32px;
+        width: 100%;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $main-white-color;
+        font-weight: 600;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+        transition: 0.2s ease-in-out;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 0px 3px 0 rgba(25, 25, 25, 0.2),
+            0 0px 5px 0px rgba(79, 79, 79, 0.19);
+        }
+      }
+
+      .forgot-password {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 12px;
+        margin-top: 10px;
+        transition: 0.2s ease-in-out;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+        text-decoration: underline;
+
+        &:hover {
+          cursor: pointer;
+          color: $main-blue-color;
+        }
+      }
+    }
+  }
+
+  .mobile-login {
+    background-color: $main-white-color;
+    height: max-content;
+    width: 85%;
+    max-width: 390px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .main-form {
+      background-color: white;
+      width: 100%;
+      padding: 40px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+
+      b {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      .ant-input {
+        border-radius: 4px;
+      }
+
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: $main-orange-color;
+        border-color: $main-orange-color;
+      }
+
+      .sign-up-btn {
+        background-color: $main-orange-color;
+        height: 32px;
+        width: 100%;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $main-white-color;
+        font-weight: 600;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+        transition: 0.2s ease-in-out;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 0px 3px 0 rgba(25, 25, 25, 0.2),
+            0 0px 5px 0px rgba(79, 79, 79, 0.19);
+        }
+      }
+
+      .forgot-password {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 12px;
+        margin-top: 10px;
+        transition: 0.2s ease-in-out;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+        text-decoration: underline;
+
+        &:hover {
+          cursor: pointer;
+          color: $main-blue-color;
+        }
+      }
+    }
+
+    .sign-up-navigation {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+
+      span {
+        &:nth-child(1) {
+          font-style: italic;
+        }
+      }
+
+      .sign-up-navigate {
+        margin-left: 10px;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '@/styles/globalStyles.scss';
+
+.upload-picture-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .picture-profile {
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1.7px solid $main-orange-color;
+  }
+
+  .upload-photo-btn {
+    border: 1px solid $gray-color-2;
+    height: 36px;
+    width: 145px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    overflow: hidden;
+    gap: 8px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s ease-in-out;
+    user-select: none;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 1px 3px 0 rgba(25, 25, 25, 0.2),
+        0 2px 10px 1px rgba(79, 79, 79, 0.19);
+    }
+  }
+
+  input {
+    display: none !important;
+  }
+}

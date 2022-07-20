@@ -1,0 +1,70 @@
+@import '@/styles/globalStyles.scss';
+
+.complete-profile-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $main-orange-color;
+  background: linear-gradient(
+    18deg,
+    rgba(235, 104, 0, 1) 0%,
+    rgba(237, 187, 88, 1) 34%,
+    rgba(218, 187, 111, 1) 54%,
+    rgba(254, 167, 76, 1) 76%,
+    rgba(255, 132, 35, 1) 89%,
+    rgba(255, 91, 0, 1) 100%
+  );
+  height: 100vh;
+
+  .main-form {
+    background-color: $main-white-color;
+    height: fit-content;
+    max-width: 740px;
+    width: 90%;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 50px;
+    padding-bottom: 35px;
+
+    .btn-field {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      gap: 14px;
+      margin-top: 20px;
+
+      .btn {
+        height: 36px;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        gap: 8px;
+        font-weight: 400;
+
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 1px 3px 0 rgba(25, 25, 25, 0.2),
+            0 2px 10px 1px rgba(79, 79, 79, 0.19);
+        }
+      }
+
+      .reset-btn {
+        border: 1px solid $gray-color-2;
+      }
+
+      .submit-btn {
+        background-color: $main-orange-color;
+        color: white;
+      }
+    }
+  }
+}

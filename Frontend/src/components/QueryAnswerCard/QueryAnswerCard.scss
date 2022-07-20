@@ -1,0 +1,62 @@
+@import '@/styles/globalStyles.scss';
+
+.query-answer-card {
+  width: 100%;
+  background-color: $main-white-color;
+  padding: 20px 30px;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 0.9px solid $gray-color-1;
+  position: relative;
+  display: flex;
+  gap: 25px;
+
+  & > img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .query-answer-card-main {
+    width: 100%;
+    transform: translateY(-6px);
+
+    .user-info {
+      .name {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .date {
+        span {
+          margin-right: 5px;
+        }
+        font-size: 12px;
+        margin-left: 10px;
+        font-style: italic;
+        color: $gray-color-text;
+      }
+    }
+
+    .vote-field {
+      margin-top: 20px;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 5px;
+      .vote-item {
+        font-size: 24px;
+        &:hover {
+          color: $main-orange-color;
+        }
+      }
+
+      .vote-item-pressed {
+        color: $main-orange-color;
+      }
+    }
+  }
+}

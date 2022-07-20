@@ -1,0 +1,40 @@
+//colors
+$main-white-color: #fff;
+$secondary-orange-color: #ffa31a;
+$main-orange-color: #ee834e;
+$main-black-color: #1c1d1f;
+$main-green-color: #4ea399;
+$main-blue-color: #00b2ff;
+$gray-color-1: #dbdbdb;
+$gray-color-3: #f2f2f2;
+$gray-color-2: #b5b5b5;
+$gray-color-text: #808080;
+$dark-blue-color-1: #283542;
+$dark-blue-color-2: #35434f;
+
+// fonts
+$inter-font: 'Inter', sans-serif;
+$poppins-font: 'Poppins', sans-serif;
+
+// responsive
+$mobile-width: 560px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

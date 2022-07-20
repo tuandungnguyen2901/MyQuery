@@ -1,0 +1,11 @@
+@import '@/styles/globalStyles.scss';
+
+.category-tag {
+  display: inline-block;
+  line-height: 12px;
+  span {
+    color: $main-blue-color;
+    font-size: 14px;
+    font-style: italic;
+  }
+}

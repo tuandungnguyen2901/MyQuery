@@ -1,0 +1,55 @@
+version: "3.7"
+
+volumes:
+  web_database:
+
+services:
+  backend:
+    build:
+      context: ./Backend
+    ports:
+      - 6009:5000
+    depends_on:
+      - db
+  db:
+    image: postgres:12
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev
+      POSTGRES_DB: web_programming
+      PGDATA: /data/postgres
+    volumes:
+      - web_database:/data/postgres
+    ports:
+      - 5432:5432
+
+  backend-node:
+    build:
+      context: ./Backend-node
+    ports:
+      - 4000:4000
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    environment:
+      MONGO_URI: mongodb+srv://haiduong:haiduong@clusterplacesharingwebs.xajmz.mongodb.net/MyQueryWebsite?retryWrites=true&w=majority
+    volumes:
+      - web_database:/data/mongodb
+
+  frontend:
+    build:
+      context: ./Frontend
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+      - backend-node
+
+  adminer:
+    image: adminer
+    ports:
+      - 8085:8080
+    depends_on:
+      - db

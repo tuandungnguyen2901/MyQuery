@@ -1,0 +1,36 @@
+@import '~antd/dist/antd.css';
+@import '@/styles/globalStyles.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
+
+.ant-btn-default:hover {
+  border-color: $gray-color-2;
+  color: $main-black-color;
+  font-weight: 600;
+  box-shadow: 0 1px 3px 0 rgba(25, 25, 25, 0.2);
+}
+
+.ant-btn-primary:hover {
+  font-weight: 600;
+  box-shadow: 0 1px 3px 0 rgba(25, 25, 25, 0.2);
+}
+
+.channel-serach__input__icon {
+  margin-right: 10px !important;
+}
